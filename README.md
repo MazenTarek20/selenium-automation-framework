@@ -1,7 +1,9 @@
 # Selenium WebDriver Test Automation Framework
 
 A comprehensive Selenium WebDriver test automation framework built with Java, demonstrating various browser automation techniques and best practices.
-📋 Table of Contents
+
+# 📋 Table of Contents
+
     Overview
     Features
     Technologies Used
@@ -12,10 +14,12 @@ A comprehensive Selenium WebDriver test automation framework built with Java, de
     Test Categories
     Contributing
 
-🎯 Overview
+# 🎯 Overview
+
 This project is a test automation framework developed during a test automation course. It demonstrates practical implementations of Selenium WebDriver with various web elements, interactions, and automation scenarios using TestNG as the testing framework.
 
-✨ Features
+# ✨ Features
+
     Browser Management: Window sizing, positioning, maximizing, and full-screen operations
     Navigation: Forward, backward, refresh, and URL navigation
     Element Interactions: Click, type, clear, hover, drag-and-drop, double-click, right-click
@@ -31,7 +35,8 @@ This project is a test automation framework developed during a test automation c
     API Testing: REST Assured integration for broken link/image checking
     Browser Options: Headless mode and browser configuration
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
+
     Java: Programming language
     Selenium WebDriver 4: Browser automation
     TestNG: Testing framework
@@ -40,7 +45,8 @@ This project is a test automation framework developed during a test automation c
     Apache Commons IO: File operations for screenshots
     Maven: Dependency management
 
-📁 Project Structure
+# 📁 Project Structure
+
 selenium-automation-framework/
 ├── test/
 │   ├── java/
@@ -65,7 +71,8 @@ selenium-automation-framework/
 └── pom.xml (recommended)
 
 
-📋 Prerequisites
+# 📋 Prerequisites
+
 Before running this project, ensure you have:
     Java Development Kit (JDK) 11 or higher
     Maven 3.6+ (for dependency management)
@@ -73,7 +80,8 @@ Before running this project, ensure you have:
     GeckoDriver (Firefox WebDriver) - should be managed by Selenium Manager
     IDE (IntelliJ IDEA, Eclipse, or VS Code recommended)
 
-🚀 Installation
+# 🚀 Installation
+
     Clone the repository
 bash
    git clone https://github.com/yourusername/selenium-automation-framework.git
@@ -86,7 +94,8 @@ bash
         Ensure JDK is properly configured
         Install TestNG plugin for your IDE
 
-▶️ Running Tests
+# ▶️ Running Tests
+
 Run all tests
 bash
 mvn test
@@ -97,7 +106,8 @@ Run from IDE
     Right-click on any test class
     Select "Run as TestNG Test"
 
-🧪 Test Categories
+# 🧪 Test Categories
+
 Browser Actions (BrowserActions.java)
 
     Window maximization and full-screen mode
@@ -155,17 +165,17 @@ Browser Configuration (BrowserOptions.java)
     Browser version specification
     Custom browser arguments
 
-📝 Notes
+# 📝 Notes
 
     This project uses the-internet.herokuapp.com as a test site for various automation scenarios
     Some tests may need URL updates or adjustments based on website changes
     Screenshots are saved to test/resources/ directory
     Tests are designed for learning purposes and demonstrate various Selenium capabilities
 
-📄 License
+# 📄 License
 This project is available for educational purposes.
 
-🙏 Acknowledgments
+# 🙏 Acknowledgments
     Test automation course materials : Mastering Selenium With Java: أتوميشن من الصفر الى الاحتراف
     Selenium WebDriver documentation
     The-Internet Herokuapp for providing test scenarios
