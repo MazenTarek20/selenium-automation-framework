@@ -48,27 +48,48 @@ This project is a test automation framework developed during a test automation c
 # 📁 Project Structure
 
 selenium-automation-framework/
+
 ├── test/
+
 │   ├── java/
+
 │   │   ├── BrowserActions.java       # Browser window management
+
 │   │   ├── ElementActions.java       # Element interactions
+
 │   │   ├── SeleniumsActions.java     # Advanced Selenium actions
+
 │   │   ├── Alerts.java               # Alert handling
+
 │   │   ├── Frames.java               # Frame switching
+
 │   │   ├── Windows.java              # Window management
+
 │   │   ├── CheckAndRadio.java        # Checkbox and radio buttons
+
 │   │   ├── DropDown.java             # Dropdown selections
+
 │   │   ├── DynamicLocator.java       # Dynamic element location
+
 │   │   ├── ScreenShots.java          # Screenshot functionality
+
 │   │   ├── RestAssured.java          # API testing for links
+
 │   │   ├── BrowserOptions.java       # Browser configuration
+
 │   │   ├── JS.java                   # JavaScript execution
+
 │   │   └── Waits.java                # Wait strategies
+
 │   └── resources/
+
 │       └── test.txt                  # Test resources
+
 ├── README.md
+
 ├── .gitignore
-└── pom.xml (recommended)
+
+└── pom.xml 
 
 
 # 📋 Prerequisites
