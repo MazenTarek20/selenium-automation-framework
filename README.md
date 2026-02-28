@@ -20,30 +20,30 @@ This project is a test automation framework developed during a test automation c
 
 # ✨ Features
 
-    Browser Management: Window sizing, positioning, maximizing, and full-screen operations
-    Navigation: Forward, backward, refresh, and URL navigation
-    Element Interactions: Click, type, clear, hover, drag-and-drop, double-click, right-click
-    Advanced Actions: Keyboard actions, context clicks, and action chains
-    Alert Handling: Accept, dismiss, and interact with JavaScript alerts
-    Frame Handling: Switching between nested frames and iframes
-    Dropdown Management: Select options from dropdown menus
-    Window Handling: Managing multiple browser windows and tabs
-    Screenshot Capture: Full page and element-level screenshots
-    Dynamic Locators: XPath-based dynamic element location
-    Relative Locators: Using Selenium 4 relative locator strategies
-    JavaScript Execution: JavaScriptExecutor for advanced interactions
-    API Testing: REST Assured integration for broken link/image checking
-    Browser Options: Headless mode and browser configuration
+    **Browser Management:** Window sizing, positioning, maximizing, and full-screen operations
+    **Navigation:** Forward, backward, refresh, and URL navigation
+    **Element Interactions:** Click, type, clear, hover, drag-and-drop, double-click, right-click
+    **Advanced Actions:** Keyboard actions, context clicks, and action chains
+    **Alert Handling:** Accept, dismiss, and interact with JavaScript alerts
+    **Frame Handling:** Switching between nested frames and iframes
+    **Dropdown Management:** Select options from dropdown menus
+    **Window Handling:** Managing multiple browser windows and tabs
+    **Screenshot Capture:** Full page and element-level screenshots
+    **Dynamic Locators:** XPath-based dynamic element location
+    **Relative Locators:** Using Selenium 4 relative locator strategies
+    **JavaScript Execution:** JavaScriptExecutor for advanced interactions
+    **API Testing:** REST Assured integration for broken link/image checking
+    **Browser Options:** Headless mode and browser configuration
 
 # 🛠️ Technologies Used
 
-    Java: Programming language
-    Selenium WebDriver 4: Browser automation
-    TestNG: Testing framework
-    Firefox WebDriver: Browser driver (GeckoDriver)
-    REST Assured: API testing for link validation
-    Apache Commons IO: File operations for screenshots
-    Maven: Dependency management
+    **Java:** Programming language
+    **Selenium WebDriver 4:** Browser automation
+    **TestNG:** Testing framework
+    **Firefox WebDriver:** Browser driver (GeckoDriver)
+    **REST Assured:** API testing for link validation
+    **Apache Commons IO:** File operations for screenshots
+    **Maven:** Dependency management
 
 # 📁 Project Structure
 
