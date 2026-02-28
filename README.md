@@ -1,204 +1,104 @@
 # Selenium WebDriver Test Automation Framework
 
-A comprehensive Selenium WebDriver test automation framework built with Java, demonstrating various browser automation techniques and best practices.
+A production-ready test automation framework built with **Java** and **Selenium WebDriver 4**, 
+covering a wide range of browser automation scenarios using best practices in test design and structure.
 
-# 📋 Table of Contents
+---
 
-    Overview
-    Features
-    Technologies Used
-    Project Structure
-    Prerequisites
-    Installation
-    Running Tests
-    Test Categories
-    Contributing
+## 🛠️ Tech Stack
 
-# 🎯 Overview
+| Technology | Purpose |
+|---|---|
+| Java | Core programming language |
+| Selenium WebDriver 4 | Browser automation engine |
+| TestNG | Test execution and assertions |
+| REST Assured | API-level link/image validation |
+| Apache Commons IO | Screenshot file handling |
+| Maven | Dependency and build management |
+| GeckoDriver (Firefox) | Browser driver |
 
-This project is a test automation framework developed during a test automation course. It demonstrates practical implementations of Selenium WebDriver with various web elements, interactions, and automation scenarios using TestNG as the testing framework.
+---
 
-# ✨ Features
+## 📁 Project Structure
 
-    **Browser Management:** Window sizing, positioning, maximizing, and full-screen operations
-    **Navigation:** Forward, backward, refresh, and URL navigation
-    **Element Interactions:** Click, type, clear, hover, drag-and-drop, double-click, right-click
-    **Advanced Actions:** Keyboard actions, context clicks, and action chains
-    **Alert Handling:** Accept, dismiss, and interact with JavaScript alerts
-    **Frame Handling:** Switching between nested frames and iframes
-    **Dropdown Management:** Select options from dropdown menus
-    **Window Handling:** Managing multiple browser windows and tabs
-    **Screenshot Capture:** Full page and element-level screenshots
-    **Dynamic Locators:** XPath-based dynamic element location
-    **Relative Locators:** Using Selenium 4 relative locator strategies
-    **JavaScript Execution:** JavaScriptExecutor for advanced interactions
-    **API Testing:** REST Assured integration for broken link/image checking
-    **Browser Options:** Headless mode and browser configuration
-
-# 🛠️ Technologies Used
-
-    **Java:** Programming language
-    **Selenium WebDriver 4:** Browser automation
-    **TestNG:** Testing framework
-    **Firefox WebDriver:** Browser driver (GeckoDriver)
-    **REST Assured:** API testing for link validation
-    **Apache Commons IO:** File operations for screenshots
-    **Maven:** Dependency management
-
-# 📁 Project Structure
-
+```
 selenium-automation-framework/
+├── Selenium/
+│   └── test/java/
+│       ├── BrowserActions.java       # Window management & navigation
+│       ├── ElementActions.java       # Element interactions & locators
+│       ├── SeleniumsActions.java     # Advanced action chains
+│       ├── Alerts.java               # Alert & dialog handling
+│       ├── Frames.java               # iFrame navigation
+│       ├── Windows.java              # Multi-window/tab management
+│       ├── CheckAndRadio.java        # Checkbox & radio button handling
+│       ├── DropDown.java             # Dropdown selection strategies
+│       ├── DynamicLocator.java       # Dynamic XPath element location
+│       ├── ScreenShots.java          # Screenshot capture utilities
+│       ├── RestAssured.java          # Broken link & image validation
+│       ├── BrowserOptions.java       # Headless & browser configuration
+│       ├── JS.java                   # JavaScriptExecutor interactions
+│       └── Waits.java                # Implicit, explicit & fluent waits
+├── pom.xml
+└── README.md
+```
 
-├── test/
+---
 
-│   ├── java/
+## ✨ Key Features
 
-│   │   ├── BrowserActions.java       # Browser window management
+### Browser & Navigation Control
+- Window maximization, resizing, positioning, and full-screen mode
+- Forward, backward, and refresh navigation
+- Retrieving page URL, title, and page source
 
-│   │   ├── ElementActions.java       # Element interactions
+### Element Interactions
+- Multi-strategy locators: ID, CSS Selector, XPath, Name, Tag
+- **Selenium 4 Relative Locators** (`above`, `below`, `near`, `toLeftOf`, `toRightOf`)
+- Chained locators using `ByAll` and `ByChained`
 
-│   │   ├── SeleniumsActions.java     # Advanced Selenium actions
+### Advanced Action Chains
+- Hover, drag-and-drop, double-click, right-click
+- Click-and-hold, keyboard key press and key combinations
+- Full `Actions` class implementation
 
-│   │   ├── Alerts.java               # Alert handling
+### Synchronization & Waits
+- Implicit waits
+- Explicit waits with `WebDriverWait` and `ExpectedConditions`
+- Fluent waits with custom polling intervals
 
-│   │   ├── Frames.java               # Frame switching
+### UI Component Handling
+- JavaScript Alerts: accept, dismiss, prompt input
+- iFrame switching and nested frame traversal
+- Multi-window and multi-tab management
+- Dropdowns via Selenium's `Select` class (by value, text, index)
+- Checkbox and radio button interactions
 
-│   │   ├── Windows.java              # Window management
+### Screenshot Capture
+- Full-page and element-level screenshots
+- Screenshot saving using Apache Commons IO
 
-│   │   ├── CheckAndRadio.java        # Checkbox and radio buttons
+### API-Level Validation (REST Assured)
+- Broken link detection by HTTP status code
+- Image source validation across pages
 
-│   │   ├── DropDown.java             # Dropdown selections
+### Browser Configuration
+- Headless browser execution
+- Custom browser arguments and options via `FirefoxOptions`
 
-│   │   ├── DynamicLocator.java       # Dynamic element location
+---
 
-│   │   ├── ScreenShots.java          # Screenshot functionality
+## 🧠 What This Framework Demonstrates
 
-│   │   ├── RestAssured.java          # API testing for links
+- Clean separation of concerns across test modules
+- Practical implementation of the full **Selenium WebDriver 4** API
+- Combining **UI automation** with **API testing** (REST Assured) in a single framework
+- Scalable structure suitable as a foundation for **Page Object Model (POM)** or larger test suites
 
-│   │   ├── BrowserOptions.java       # Browser configuration
+---
 
-│   │   ├── JS.java                   # JavaScript execution
+## 📌 Notes
 
-│   │   └── Waits.java                # Wait strategies
-
-│   └── resources/
-
-│       └── test.txt                  # Test resources
-
-├── README.md
-
-├── .gitignore
-
-└── pom.xml 
-
-
-# 📋 Prerequisites
-
-Before running this project, ensure you have:
-    Java Development Kit (JDK) 11 or higher
-    Maven 3.6+ (for dependency management)
-    Firefox browser installed
-    GeckoDriver (Firefox WebDriver) - should be managed by Selenium Manager
-    IDE (IntelliJ IDEA, Eclipse, or VS Code recommended)
-
-# 🚀 Installation
-
-    Clone the repository
-bash
-   git clone https://github.com/yourusername/selenium-automation-framework.git
-   cd selenium-automation-framework
-    Set up Maven dependencies (create a pom.xml file with required dependencies)
-bash
-   mvn clean install
-    Configure your IDE
-        Import the project as a Maven project
-        Ensure JDK is properly configured
-        Install TestNG plugin for your IDE
-
-# ▶️ Running Tests
-
-Run all tests
-bash
-mvn test
-Run specific test class
-bash
-mvn test -Dtest=BrowserActions
-Run from IDE
-    Right-click on any test class
-    Select "Run as TestNG Test"
-
-# 🧪 Test Categories
-
-Browser Actions (BrowserActions.java)
-
-    Window maximization and full-screen mode
-    Window positioning and sizing
-    Browser navigation (back, forward, refresh)
-    Getting current URL, title, and page source
-
-Element Actions (ElementActions.java)
-
-    Locating elements using various strategies (ID, CSS, XPath)
-    Relative locators (Selenium 4 feature)
-    Typing, clicking, and clearing elements
-    Chained locators with ByAll and ByChained
-
-Advanced Selenium Actions (SeleniumsActions.java)
-
-    Hover actions
-    Drag and drop
-    Double-click and right-click
-    Click and hold
-    Keyboard actions (key press, key combinations)
-
-Alert Handling (Alerts.java)
-
-    Accepting and dismissing alerts
-    Sending text to prompt alerts
-    Reading alert text
-
-Frame Management (Frames.java)
-
-    Switching between nested frames
-    Navigating frame hierarchies
-    Returning to default content
-
-Dropdown Handling (DropDown.java)
-
-    Selecting options by value, text, or index
-    Working with Select class
-
-Screenshot Capture (ScreenShots.java)
-
-    Full-page screenshots
-    Element-specific screenshots
-    Saving screenshots to files
-
-API Testing (RestAssured.java)
-
-    Checking broken links
-    Validating image sources
-    HTTP status code verification
-
-Browser Configuration (BrowserOptions.java)
-
-    Headless browser execution
-    Browser version specification
-    Custom browser arguments
-
-# 📝 Notes
-
-    This project uses the-internet.herokuapp.com as a test site for various automation scenarios
-    Some tests may need URL updates or adjustments based on website changes
-    Screenshots are saved to test/resources/ directory
-    Tests are designed for learning purposes and demonstrate various Selenium capabilities
-
-# 📄 License
-This project is available for educational purposes.
-
-# 🙏 Acknowledgments
-    Test automation course materials : Mastering Selenium With Java: أتوميشن من الصفر الى الاحتراف
-    Selenium WebDriver documentation
-    The-Internet Herokuapp for providing test scenarios
-
-Happy Testing! 🚀
+- Primary test site: [The Internet Herokuapp](https://the-internet.herokuapp.com) — a standard platform for Selenium practice scenarios
+- Screenshots are saved to the `test/resources/` directory
+- Selenium Manager handles driver binary management automatically (no manual driver setup required)
